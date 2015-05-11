@@ -15,8 +15,9 @@ GPIO.setup(pinNumBTN, GPIO.IN)  # Tells it that pinNumBTN will be giving input
 btnOn = False
 prev_input = 1
 
+print "press button"
 
-while True:
+while btnOn is False:
     try:
         input = GPIO.input(pinNumBTN)
 
@@ -28,11 +29,13 @@ while True:
         ## When the button is pressed, start toggling the LED between
         ## HIGH and LOW with a 0.5s interval between
         if btnOn:
+            print "button on"
             GPIO.output(pinNumLED, PIO.HIGH)
             sleep(0.5)
             GPIO.output(pinNumLED, GPIO.LOW)
             sleep(0.5)
         else:
+            print "button off"
             GPIO.output(pinNumLED, GPIO.HIGH)
 
     except KeyboardInterrupt:
