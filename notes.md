@@ -13,12 +13,13 @@ See: http://www.hypexr.org/linux_scp_help.php
 
 ### mount 
 
-sudo mount -o uid=pi,gid=pi /dev/sda1 /mnt/usb_name
+```sudo mount -o uid=pi,gid=pi /dev/sda1 /mnt/usb_name```
 
 
-### u'n'mount 
+### unmount 
 
-sudo umount /mnt/usb_name
+```sudo umount /mnt/usb_name```
 
+Important: it's ```umount``` without the "n"
 
 See: http://elinux.org/RPi_Adding_USB_Drives
