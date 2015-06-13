@@ -23,3 +23,11 @@ See: http://www.hypexr.org/linux_scp_help.php
 Important: it's ```umount``` without the "n"
 
 See: http://elinux.org/RPi_Adding_USB_Drives
+
+
+## Static IP's
+
+
+
+See: http://elinux.org/Configuring_a_Static_IP_address_on_your_Raspberry_Pi
+or see: http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/
