@@ -1,12 +1,14 @@
 import RPi.GPIO as GPIO
 import time
+import sys
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(17, GPIO.OUT)
 
+# TODO: use sys.argv to set the on, off, and repeat variables
 
-# turn LED on for a second, the off for a second
+# turn LED on for a set time, the off for a set time
 
 def flickon(on_secs, off_secs, repeat):
 
@@ -29,7 +31,7 @@ def flickon(on_secs, off_secs, repeat):
         counter += 1  # add 1 to counter
 
 
-flickon(2, 0.5, 10)
+flickon(0.05, 0.05, 100)
 
 print "Finished the light show"
 
