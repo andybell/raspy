@@ -18,8 +18,19 @@ Place LED in breadboard so legs are in two different rows. Connect jumper cable 
 
 ## Usage
 
-sudo python on.py -> turns LED on
+####Turn LED on
+```python 
+sudo python on.py
+```
 
-sudo python off.py -> turns LED off
 
-sudo python onoffrepeat.py on_secs off_secs repeat_times -> turns LED on for an set ammount of time, then off for a set ammount of time and then repeats for x times.
+####Turn LED off
+```python 
+sudo python off.py
+```
+
+#### Turns LED on for a set time, then off for a set time and then repeat x times.
+```python 
+sudo python onoffrepeat.py on_secs off_secs repeat_times
+``` 
+
